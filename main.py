@@ -88,3 +88,8 @@ def encontrar_usuario_por_id(user_id):
 
 def encontrar_postagem_por_id(post_id):
     return postagens[post_id - 1]
+
+def excluir_usuario(id_usuario):
+    usuario = encontrar_usuario_por_id(id_usuario)
+    usuarios.remove (usuario)
+    
